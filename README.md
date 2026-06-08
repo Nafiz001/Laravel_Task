@@ -185,3 +185,35 @@ A ready-to-import Postman collection is included at
 4. Run **Login (User)** then **Admin Dashboard** again to see the `403` response.
 
 The collection uses a `base_url` variable defaulting to `http://127.0.0.1:8000`.
+
+## Screenshots
+
+### 1. Login as Admin — `200 OK`
+
+Returns a Sanctum token and the user's `admin` role.
+
+![Login Admin success](postman/01-login-admin-success.png)
+
+### 2. Admin Dashboard (admin token) — `200 OK`
+
+Authenticated admin can access the protected endpoint.
+
+![Admin dashboard success](postman/02-admin-dashboard-success.png)
+
+### 3. Login as User — `200 OK`
+
+A non-admin user logs in and receives the `user` role.
+
+![Login User success](postman/03-login-user-success.png)
+
+### 4. Admin Dashboard (user token) — `403 Forbidden`
+
+A non-admin user is blocked from the admin endpoint.
+
+![Admin dashboard forbidden](postman/04-admin-dashboard-forbidden.png)
+
+### 5. Login with wrong password — `401 Unauthorized`
+
+Invalid credentials are rejected.
+
+![Login invalid credentials](postman/05-login-invalid-credentials.png)
