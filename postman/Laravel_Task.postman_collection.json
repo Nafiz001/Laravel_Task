@@ -1,5 +1,6 @@
 {
   "info": {
+    "_postman_id": "e2cf5fa1-4c65-4a3d-990c-8ad8daae1f38",
     "name": "Laravel Task - Auth & Role API",
     "description": "Login + Admin Dashboard API (Laravel Sanctum + Spatie Permission).",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
